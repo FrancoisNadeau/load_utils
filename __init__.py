@@ -10,6 +10,7 @@ from .find_key import find_key
 from .get_dst_path import get_dst_path
 from .loadfiles import loadfiles
 from .loadimages import loadimages
+from .load_module import load_module
 from .megamerge import megamerge
 from .evenodd import evenodd
 from .flatten import flatten
