@@ -3,6 +3,8 @@
 import os
 from typing import Union
 import pandas as pd
+from os.path import basename as bname
+from os.path import dirname as dname
 
 def loadfiles(pathlist: Union[list, tuple]) -> object:
     """ Returns a pd.DataFrame with columns
