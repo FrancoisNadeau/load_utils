@@ -4,7 +4,7 @@ import setuptools
 from setuptools import setup
 
 setup(
-    name='load_utils',
+    name='loadutils',
     version='0.0.1',
     author='francois.nadeau.1',
     author_email='francois.nadeau.1@umontreal.ca',
@@ -18,7 +18,7 @@ setup(
     ],
     package_dir={"": "."},
     packages=setuptools.find_packages(where="."),
-    url='https://github.com/FrancoisNadeau/load_utils.git',
+    url='https://github.com/FrancoisNadeau/loadutils.git',
     python_requires=">=3.6",
 )
 
