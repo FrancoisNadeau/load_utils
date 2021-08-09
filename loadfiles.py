@@ -5,7 +5,6 @@ from typing import Union
 import pandas as pd
 from os.path import basename as bname
 from os.path import dirname as dname
-from .sizeof_fmt import sizeof_fmt
 
 def loadfiles(pathlist: Union[list, tuple]) -> object:
     """ Returns a pd.DataFrame with columns
@@ -16,12 +15,11 @@ def loadfiles(pathlist: Union[list, tuple]) -> object:
         'fpaths': path to file """
     return pd.DataFrame(((bname(sheet).split(".", 1)[0],
                           os.path.splitext(sheet)[1],
-                          bname(dname(sheet)), sheet,
-			  sizeof_fmt(sheet))
+                          bname(dname(sheet)), sheet)
                          for sheet in pathlist),
                         dtype = object,
                         columns=["filename", "ext",
-                                 "parent", "fpaths", "fsize"]).sort_values(
+                                 "parent", "fpaths"]).sort_values(
         "filename").reset_index(drop=True)
 
 def main():
