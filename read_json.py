@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+import os
+from typing import Union
+import json
+
 def read_json(fpath:Union[str, os.PathLike]) -> dict:
     with open(fpath, mode='r', encoding='UTF-8') as jfile:
         jdict = json.load(jfile)
