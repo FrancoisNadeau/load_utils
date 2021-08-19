@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+import os
+from typing import Union
+import pickle
+
 def load_pickle(fpath:Union[str,os.PathLike]):
     import pickle
     with open(fpath, 'rb') as afile:
