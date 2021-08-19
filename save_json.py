@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+import os
+from typing import Union
+import json
+
 def save_json(fpath:Union[str, os.PathLike],
               jobj:dict) -> None:
     with open(fpath, mode='w', encoding='UTF-8') as jfile:
