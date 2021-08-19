@@ -4,7 +4,7 @@ import os
 from typing import Union
 import pickle
 
-def save_pickle(fpath:Union[str,os.PathLike]
+def save_pickle(fpath:Union[str,os.PathLike],
                 your_obj:object) -> None:
     import pickle
     with open(fpath, 'wb') as afile:
