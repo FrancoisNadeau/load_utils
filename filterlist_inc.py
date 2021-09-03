@@ -15,10 +15,8 @@ def filterlist_inc(
     include: patterns susceptible to return a match among items in 'str_lst'
     str_lst: list of items to be filtered
     """
-    outlst = [itm for itm in str_lst if any(sub in itm for sub in include)]
-    return [sorted(outlst) if sort else outlst][0]
+    return [itm for itm in str_lst if any(sub in itm for sub in include)]
 
 def main():
     if __name__ == __main__:
         filterlist_inc(exclude, str_lst)
-
