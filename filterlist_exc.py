@@ -2,7 +2,7 @@
 
 from typing import Sequence
 
-def filterlist_exc00(
+def filterlist_exc(
     exclude: Sequence,
     lst: Sequence
 ) -> list:
