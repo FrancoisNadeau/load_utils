@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='loadutils',
-    version=attr:loadutils.__version__,
+    version=attr: loadutils.__version__,
     author='francois.nadeau.1',
     author_email='francois.nadeau.1@umontreal.ca',
     description="Helpful functions to list, iterate through and classify files and directories",
