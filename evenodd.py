@@ -1,8 +1,8 @@
-from collections.abc import Iterable
-from typing import Sequence
-from typing import Union
+#!usr/bin/python
 
-def evenodd(inpt: Union[Iterable, Sequence]) -> tuple:
+from typing import Sequence
+
+def evenodd(inpt:Sequence) -> tuple:
     """
     Returns a tuple containg all (even items, odd items) from 'inpt' 
     ----------------------------------------------------------------
