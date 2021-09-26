@@ -1,8 +1,6 @@
 #!usr/bin/python
 
-from typing import Sequence
-
-def evenodd(inpt:Sequence) -> tuple:
+def evenodd(inpt:list) -> tuple:
     """
     Returns a tuple containg all (even items, odd items) from 'inpt' 
     ----------------------------------------------------------------
