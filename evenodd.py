@@ -19,5 +19,5 @@ def evenodd(inpt: Union[Iterable, Sequence]) -> tuple:
 def main():
     evenodd(inpt)
 
-if __name__ == __main__:
+if '__name__' == '__main__':
     evenodd(inpt)
