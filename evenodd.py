@@ -1,6 +1,8 @@
-#!usr/bin/python
+from collections.abc import Iterable
+from typing import Sequence
+from typing import Union
 
-def evenodd(inpt:list) -> tuple:
+def evenodd(inpt: Union[Iterable, Sequence]) -> tuple:
     """
     Returns a tuple containg all (even items, odd items) from 'inpt' 
     ----------------------------------------------------------------
@@ -13,6 +15,7 @@ def evenodd(inpt:list) -> tuple:
     return (eveseq, oddseq)
 
 def main():
-    if __name__ == __main__:
-        evenodd(inpt)
+    evenodd(inpt)
 
+if __name__ == __main__:
+    evenodd(inpt)
