@@ -35,5 +35,5 @@ def flatten(
 def main():
     flatten(nested_seq)
 
-if __name__ == __main__:
-    flatten(nested_seq)
+if '__name__' == '__main__':
+    main()
