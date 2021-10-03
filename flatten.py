@@ -1,4 +1,4 @@
-#!usr/bin/python
+#!usr/bin/env/python3
 
 from collections.abc import Iterable
 from typing import Sequence
@@ -33,5 +33,7 @@ def flatten(
     ]
 
 def main():
-    if __name__ == __main__:
-        flatten(nested_seq)
+    flatten(nested_seq)
+
+if __name__ == __main__:
+    flatten(nested_seq)
