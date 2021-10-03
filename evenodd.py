@@ -1,3 +1,5 @@
+#!usr/bin/env/python3
+
 from collections.abc import Iterable
 from typing import Sequence
 from typing import Union
