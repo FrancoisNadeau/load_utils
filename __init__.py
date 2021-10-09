@@ -2,6 +2,7 @@
 
 # __init__.py
 
+from .combine_dicts import combine_dicts
 from .evenodd import evenodd
 from .flatten import flatten
 from .filterlist_exc import filterlist_exc
