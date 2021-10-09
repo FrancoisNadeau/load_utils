@@ -22,8 +22,8 @@ def combine_dicts(dictlist:Sequence)->dict:
     allkeys = flatten(tuple(tuple(adict.keys())
                                for adict in dictlist))
     ukeys = list(dict.fromkeys(allkeys))
-    return dict((akey,([adict[akey] for adict in
-             dictlist if akey in tuple(adict.keys())]))
+    return dict((akey,[adict[akey] for adict in
+             dictlist if akey in tuple(adict.keys())])
                 for akey in ukeys)
 
 def main():
