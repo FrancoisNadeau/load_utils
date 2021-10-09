@@ -19,7 +19,7 @@ def combine_dicts(dictlist:Sequence)->dict:
         Result of the key:value lookup iterations in a dict.
     """
     
-    allkeys = lu.flatten(tuple(tuple(adict.keys())
+    allkeys = flatten(tuple(tuple(adict.keys())
                                for adict in dictlist))
     ukeys = list(dict.fromkeys(allkeys))
     return dict((akey,([adict[akey] for adict in
