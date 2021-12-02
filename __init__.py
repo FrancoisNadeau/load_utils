@@ -11,7 +11,6 @@ from .find_key import find_key
 from .loaddirs import loaddirs
 from .loadfiles import loadfiles
 from .loadimages import loadimages
-from .load_module import load_module
 from .load_pickle import load_pickle
 from .lst_intersection import lst_intersection
 from .megamerge import megamerge
